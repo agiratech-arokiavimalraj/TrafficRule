@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "13212157458",
+    "project_id": "traffic-rule-d97f6",
+    "storage_bucket": "traffic-rule-d97f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13212157458:android:357ad442482302a6ba3acb",
+        "android_client_info": {
+          "package_name": "com.example.our_rights_fe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13212157458-ou3m3n9t5u7gva4sra4u989q3n12qks7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMs8q6cocpr7LeAWaX1JR-tA1zCdbRE04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13212157458-ou3m3n9t5u7gva4sra4u989q3n12qks7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
