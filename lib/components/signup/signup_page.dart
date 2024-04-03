@@ -6,6 +6,7 @@ import 'package:our_rights_fe/components/signup/email_signup.dart';
 import 'package:our_rights_fe/components/signup/full_name.dart';
 import 'package:our_rights_fe/components/signup/password_signup.dart';
 import 'package:our_rights_fe/components/signup/signup_button.dart';
+import 'package:our_rights_fe/service/logo.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
@@ -17,72 +18,47 @@ class SignUpPage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 238, 238, 238),
         ),
-        body: Padding(
-          padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+        body: const Padding(
+          padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
-                      child: Align(
-                        alignment: Alignment.topLeft,
-                        child: Image.asset(
-                          "assets/images/logo.png",
-                          width: 40,
-                          color: const Color.fromARGB(255, 0, 136, 248),
-                        ),
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Our Rights",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 0, 117, 227),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
+                Logo(),
+                SizedBox(
                   height: 30,
                 ),
-                const Text(
+                Text(
                   "Create Account",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
-                const FullName(),
-                const SizedBox(
+                FullName(),
+                SizedBox(
                   height: 10,
                 ),
-                const EmailSignUp(),
-                const SizedBox(
+                EmailSignUp(),
+                SizedBox(
                   height: 10,
                 ),
-                const PasswordSignUp(),
-                const SizedBox(
+                PasswordSignUp(),
+                SizedBox(
                   height: 25,
                 ),
-                const SignUpButton(),
-                const SizedBox(
+                SignUpButton(),
+                SizedBox(
                   height: 20,
                 ),
-                const LoginDivider(),
-                const SizedBox(
+                LoginDivider(),
+                SizedBox(
                   height: 20,
                 ),
-                const OtherLoginButton(),
-                const SizedBox(
+                OtherLoginButton(),
+                SizedBox(
                   height: 20,
                 ),
-                const AlreadyAccount(),
+                AlreadyAccount(),
               ],
             ),
           ),

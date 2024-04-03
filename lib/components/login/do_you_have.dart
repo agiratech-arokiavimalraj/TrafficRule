@@ -9,7 +9,7 @@ class DoYouHave extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text(
-          "Already have account? ",
+          "Don't have an account? ",
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,

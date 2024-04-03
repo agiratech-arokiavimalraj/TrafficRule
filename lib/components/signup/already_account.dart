@@ -9,7 +9,7 @@ class AlreadyAccount extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text(
-          "Don't have an account? ",
+          "Already have account? ",
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,

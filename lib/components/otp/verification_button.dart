@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:our_rights_fe/components/otp/otp_page.dart';
+import 'package:our_rights_fe/components/dashboard/dashboard_page.dart';
 
-class LoginButton extends StatelessWidget {
-  const LoginButton({
+class VerificationButton extends StatelessWidget {
+  const VerificationButton({
     super.key,
   });
   @override
   Widget build(context) {
     return InkWell(
-      // onTap: signInVerification(),
       onTap: () {
-        debugPrint(" printing.............. Vimal");
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const OTPPage(),
+            builder: (context) => const DashboardPage(),
           ),
         );
       },
@@ -25,7 +23,7 @@ class LoginButton extends StatelessWidget {
         ),
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 150),
         child: const Text(
-          'Login',
+          'Verify',
           style: TextStyle(
             color: Colors.white,
             fontSize: 18,

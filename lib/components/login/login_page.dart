@@ -6,6 +6,7 @@ import 'package:our_rights_fe/components/login/login_button.dart';
 import 'package:our_rights_fe/components/login/login_divider.dart';
 import 'package:our_rights_fe/components/login/other_login_button.dart';
 import 'package:our_rights_fe/components/login/password_container.dart';
+import 'package:our_rights_fe/service/logo.dart';
 
 class LogInPage extends StatelessWidget {
   LogInPage({super.key});
@@ -32,32 +33,7 @@ class LogInPage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
-                      child: Align(
-                        alignment: Alignment.topLeft,
-                        child: Image.asset(
-                          "assets/images/logo.png",
-                          width: 40,
-                          color: const Color.fromARGB(255, 0, 136, 248),
-                        ),
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Our Rights",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 0, 117, 227),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                const Logo(),
                 const SizedBox(
                   height: 30,
                 ),
