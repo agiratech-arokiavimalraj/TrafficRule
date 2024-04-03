@@ -12,6 +12,6 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(context) {
-    return SplashScreen();
+    return const SplashScreen();
   }
 }
