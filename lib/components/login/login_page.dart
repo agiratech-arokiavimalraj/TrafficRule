@@ -22,59 +22,57 @@ class LogInPage extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 238, 238, 238),
+      appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 238, 238, 238),
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 238, 238, 238),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                const Logo(),
-                const SizedBox(
-                  height: 30,
-                ),
-                const Text(
-                  "Login to Account",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                EmailContainer(
-                  mailControl: mailControler,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                PasswordContainer(
-                  passControl: passControler,
-                ),
-                const SizedBox(
-                  height: 25,
-                ),
-                const ForgetPassword(),
-                const SizedBox(
-                  height: 25,
-                ),
-                const LoginButton(),
-                const SizedBox(
-                  height: 20,
-                ),
-                const LoginDivider(),
-                const SizedBox(
-                  height: 20,
-                ),
-                const OtherLoginButton(),
-                const SizedBox(
-                  height: 20,
-                ),
-                const DoYouHave(),
-              ],
-            ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              const Logo(),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                "Login to Account",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              EmailContainer(
+                mailControl: mailControler,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              PasswordContainer(
+                passControl: passControler,
+              ),
+              const SizedBox(
+                height: 25,
+              ),
+              const ForgetPassword(),
+              const SizedBox(
+                height: 25,
+              ),
+              const LoginButton(),
+              const SizedBox(
+                height: 20,
+              ),
+              const LoginDivider(),
+              const SizedBox(
+                height: 20,
+              ),
+              const OtherLoginButton(),
+              const SizedBox(
+                height: 20,
+              ),
+              const DoYouHave(),
+            ],
           ),
         ),
       ),
