@@ -18,15 +18,15 @@ class NewTicketButton extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 22, 96, 222),
+          color: const Color.fromARGB(255, 69, 137, 254),
           borderRadius: BorderRadius.circular(5),
         ),
-        padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 30),
+        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
         child: const Text(
           'Create New Ticket',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 18,
+            fontSize: 15,
           ),
         ),
       ),

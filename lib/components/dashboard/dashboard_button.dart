@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:our_rights_fe/components/demo/demo.dart';
 
 class DashboardButton extends StatelessWidget {
   const DashboardButton({
@@ -12,44 +13,57 @@ class DashboardButton extends StatelessWidget {
   final int countsOf;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 90,
-      width: 170,
-      decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 55, 50, 197),
-        borderRadius: BorderRadius.all(
-          Radius.circular(5),
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const Demo(),
+          ),
+        );
+      },
+      child: Container(
+        height: 90,
+        width: 170,
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 55, 50, 197),
+          borderRadius: BorderRadius.all(
+            Radius.circular(5),
+          ),
         ),
-      ),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 8,
-          ),
-          Icon(
-            displayIcon,
-            color: const Color.fromARGB(255, 22, 96, 222),
-            size: 20,
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          Text(
-            routeName,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 11,
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 8,
             ),
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          Text(
-            countsOf.toString(),
-            style: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
-          )
-        ],
+            Icon(
+              displayIcon,
+              color: const Color.fromARGB(255, 69, 137, 254),
+              weight: 40,
+              size: 20,
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Text(
+              routeName,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 11,
+              ),
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Text(
+              countsOf.toString(),
+              style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20),
+            )
+          ],
+        ),
       ),
     );
   }
