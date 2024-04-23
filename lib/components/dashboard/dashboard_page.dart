@@ -18,7 +18,7 @@ class DashboardPage extends StatelessWidget {
                 Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
                       child: Align(
                         alignment: Alignment.topLeft,
                         child: Image.asset(
